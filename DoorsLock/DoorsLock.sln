@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34C06F1D-DF68-45A0-9A0B-A4AACFA34705}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\docker-compose.yaml = ..\docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoorsApi", "DoorsApi\DoorsApi.csproj", "{5B223DA5-7519-432E-9C3F-E594BA38C1CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoorEmulator", "DoorEmulator\DoorEmulator.csproj", "{7029974C-1A2C-401A-B1E2-A2223C9D2A1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorsApi.Tests", "DoorsApi.Tests\DoorsApi.Tests.csproj", "{4D9E8729-10E0-4054-BABF-028B124F1847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B223DA5-7519-432E-9C3F-E594BA38C1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B223DA5-7519-432E-9C3F-E594BA38C1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B223DA5-7519-432E-9C3F-E594BA38C1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B223DA5-7519-432E-9C3F-E594BA38C1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7029974C-1A2C-401A-B1E2-A2223C9D2A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7029974C-1A2C-401A-B1E2-A2223C9D2A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7029974C-1A2C-401A-B1E2-A2223C9D2A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7029974C-1A2C-401A-B1E2-A2223C9D2A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9E8729-10E0-4054-BABF-028B124F1847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9E8729-10E0-4054-BABF-028B124F1847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9E8729-10E0-4054-BABF-028B124F1847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9E8729-10E0-4054-BABF-028B124F1847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7029974C-1A2C-401A-B1E2-A2223C9D2A1F} = {34C06F1D-DF68-45A0-9A0B-A4AACFA34705}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0AD8F67-4529-4258-BB9D-58D3B5442CB8}
+	EndGlobalSection
+EndGlobal
