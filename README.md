@@ -2,11 +2,11 @@
 
 ## Database 
 
-![dbSchema](../DoorLock/DoorsLock/docs/DatabaseDiagram.png)
+![dbSchema](DoorsLock/docs/DatabaseDiagram.png)
 
 ## Design Stage
 
-![dbDesign](../DoorLock/DoorsLock/docs/DoorsDesign.png)
+![dbDesign](DoorsLock/docs/DoorsDesign.png)
 
 
 ## Implementation
