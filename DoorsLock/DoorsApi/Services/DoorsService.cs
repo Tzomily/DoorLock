@@ -72,8 +72,11 @@ public class DoorsService : IDoorsService
 
             var response = await client.GetResponse<DoorOpened>(new { doorId });
         }
-        // else return user not authorized & senc access denied event
-        await _historyService.CreateAsync(new CreateHistoryRequest(buildingId, doorId, userId, Status.UserUnauthorized));
+        else
+        {
+            // else return user not authorized & senc access denied event
+            await _historyService.CreateAsync(new CreateHistoryRequest(buildingId, doorId, userId, Status.UserUnauthorized));
+        }
     }
 
     public async Task<bool> IsDoorAuthorized(Guid userId, Guid buildingId, Guid doorId, CancellationToken token = default)
