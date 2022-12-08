@@ -33,6 +33,7 @@ DROP TABLE IF EXISTS Role;
 
 CREATE TABLE Role(
     Id varchar(36) NOT NULL,
+    Name varchar(36) NOT NULL,
     AccessLevel integer NOT NULL DEFAULT 0,
     BuildingId varchar(36) NOT NULL,
     PRIMARY KEY (Id),
