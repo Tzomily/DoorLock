@@ -67,8 +67,8 @@ public class DoorsService : IDoorsService
             await _historyService.CreateAsync(new CreateHistoryRequest(buildingId, doorId, userId, Status.Open));
 
             //publish event for opening door
-            var address = new Uri("rabbitmq://localhost/DoorService");
-            var client = _bus.CreateRequestClient<OpenDoorCommand>();
+            var address = new Uri("rabbitmq://localhost/DoorService" + doorId);
+            var client = _bus.CreateRequestClient<OpenDoorCommand>(address);
 
             var response = await client.GetResponse<DoorOpened>(new { doorId });
         }

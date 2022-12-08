@@ -7,8 +7,12 @@ namespace DoorEmulator;
 public class DoorService : ServiceControl
 {
     IBusControl _busControl;
+
     public bool Start(HostControl hostControl)
     {
+        Console.WriteLine("Enter Door Id: ");
+        var doorId = Console.ReadLine().Trim();
+
         _busControl = Bus.Factory.CreateUsingRabbitMq(cnf =>
         {
             cnf.Host(new Uri("rabbitmq://localhost/"), h =>
@@ -17,7 +21,7 @@ public class DoorService : ServiceControl
                 h.Password("password");
             });
 
-            cnf.ReceiveEndpoint("DoorService",
+            cnf.ReceiveEndpoint("DoorService" + doorId,
                 e =>
                 {
                     e.Handler<OpenDoorCommand>(

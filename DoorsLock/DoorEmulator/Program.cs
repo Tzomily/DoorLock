@@ -14,6 +14,4 @@ class Program
 
         return (int)HostFactory.Run(x => x.Service<DoorService>());
     }
-
-
 }
