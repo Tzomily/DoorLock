@@ -32,6 +32,7 @@ public class HistoryService : IHistoryService
         CancellationToken token = default)
     {
         // Authorize user
+        //TODO: implement HistoryRole table + authorization 
         var authUser = await IsHistoryAuthorized(userClientId, request.BuildingId, token);
 
         if (!authUser) return Enumerable.Empty<History>();
